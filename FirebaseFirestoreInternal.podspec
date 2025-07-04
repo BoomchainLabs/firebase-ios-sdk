@@ -45,7 +45,6 @@ Google Cloud Firestore is a NoSQL document database built for automatic scaling,
   # that "quick open" by filename in Xcode will continue to work.
   s.source_files = [
     'FirebaseCore/Extension/*.h',
-    'FirebaseCore/Sources/FIROptionsInternal.h',
     'Firestore/Source/Public/FirebaseFirestore/*.h',
     'Firestore/Source/**/*.{m,mm}',
     'Firestore/Protos/nanopb/**/*.cc',
@@ -92,7 +91,7 @@ Google Cloud Firestore is a NoSQL document database built for automatic scaling,
     "#{s.module_name}_Privacy" => 'Firestore/Source/Resources/PrivacyInfo.xcprivacy'
   }
 
-  s.dependency 'FirebaseAppCheckInterop', '~> 12.0'
+  s.dependency 'FirebaseAppCheckInterop', '~> 12.0.0'
   s.dependency 'FirebaseCore', '~> 12.0.0'
 
   abseil_version = '~> 1.20240722.0'
