@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.authors          = 'Google, Inc.'
 
     s.source           = {
-        :http => 'https://dl.google.com/firebase/ios/analytics/922d99823e10f4a0/GoogleAppMeasurement-11.15.0.tar.gz'
+        :http => 'https://dl.google.com/firebase/ios/analytics/dcba2ac84f595e1b/GoogleAppMeasurement-12.0.0.tar.gz'
     }
 
     s.cocoapods_version = '>= 1.12.0'
@@ -49,15 +49,5 @@ Pod::Spec.new do |s|
     s.subspec 'IdentitySupport' do |ss|
         ss.dependency 'GoogleAppMeasurement/Core', '12.0.0'
         ss.vendored_frameworks = 'Frameworks/GoogleAppMeasurementIdentitySupport.xcframework'
-    end
-
-    # Deprecated. Use IdentitySupport subspec instead.
-    s.subspec 'AdIdSupport' do |ss|
-        ss.dependency 'GoogleAppMeasurement/IdentitySupport', '12.0.0'
-    end
-
-    # Deprecated. Use Core subspec instead.
-    s.subspec 'WithoutAdIdSupport' do |ss|
-        ss.dependency 'GoogleAppMeasurement/Core', '12.0.0'
     end
 end
